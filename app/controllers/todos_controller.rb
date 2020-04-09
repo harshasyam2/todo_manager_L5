@@ -18,4 +18,13 @@ class TodosController < ApplicationController
     new_todo = Todo.create!(todo_text: todo_text, due_date: due_date, completed: completed)
     render plain: new_todo.to_pleasant_string
   end
+
+  def update
+    id = params[:id]
+    completed = params[:completed]
+    todo = Todo.find(id)
+    todo.completed = completed
+    todo.save!
+    render plain: "Hey! you updated the complete status to #{completed}"
+  end
 end
