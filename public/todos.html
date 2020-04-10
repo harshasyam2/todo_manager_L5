@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Todo Management App</title>
+  <link rel="stylesheet" type="text/css" href="reset.css">
+  <link rel="stylesheet" type="text/css" href="todo-app.css">
+
+</head>
+
+<body>
+  <h1 class="Todopage-title"> My Todo-list </h1>
+
+  <section class="AddTodo">
+    <input class="AddTodo-text" type="text" placeholder="What's next?">
+
+    <input class="AddTodo-date" type="date">
+
+    <input class="AddTodo-button" type="button" value="Add">
+  </section>
+
+  <section class="TodoSection">
+    <div class="TodoSectionTitle">
+      <p class="TodoSectionTitle-text"> Due Today </p>
+      <p class="TodoSectionTitle-remainingcount"> 0/4 </p>
+    </div>
+    <ul>
+      <li class="TodoItem">
+        <div class="TodoItem-container">
+          <input class="TodoItem-checkbox" type="checkbox">Submit SaaS 201 Project
+          <p class="TodoItem-Overdue"> Overdue </p>
+          <a class="TodoItem-delete" href="javascript:void(0)">
+            <img src="trashcan.jpeg">
+          </a>
+        </div>
+      </li>
+
+      <li class="TodoItem">
+        <div class="TodoItem-container">
+          <input class="TodoItem-checkbox" type="checkbox">Call accountant
+          <a class="TodoItem-delete" href="javascript:void(0)">
+            <img src="trashcan.jpeg">
+          </a>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="TodoSection">
+    <div class="TodoSectionTitle">
+      <p class="TodoSectionTitle-text"> Due Tomorrow </p>
+      <p class="TodoSectionTitle-remainingcount"> 0/3 </p>
+    </div>
+    <ul>
+      <li class="TodoItem">
+        <div class="TodoItem-container">
+          <input class="TodoItem-checkbox" type="checkbox">Refill groceries
+          <a class="TodoItem-delete" href="javascript:void(0)">
+            <img src="trashcan.jpeg">
+          </a>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="TodoSection">
+    <div class="TodoSectionTitle">
+      <p class="TodoSectionTitle-text"> Remaining </p>
+      <p class="TodoSectionTitle-remainingcount"> 0/3 </p>
+    </div>
+    <ul>
+      <li class="TodoItem">
+        <div class="TodoItem-container">
+          <input class="TodoItem-checkbox" type="checkbox">Type something
+          <p class="TodoItem-Jan21"> Jan21 </p>
+          <a class="TodoItem-delete" href="javascript:void(0)">
+            <img src="trashcan.jpeg">
+          </a>
+        </div>
+      </li>
+
+      <li class="TodoItem">
+        <div class="TodoItem-container">
+          <input class="TodoItem-checkbox" type="checkbox">Type something
+          <p class="TodoItem-Jan22"> Jan22 </p>
+          <a class="TodoItem-delete" href="javascript:void(0)">
+            <img src="trashcan.jpeg">
+          </a>
+        </div>
+      </li>
+
+      <li class="TodoItem">
+        <div class="TodoItem-container">
+          <input class="TodoItem-checkbox" type="checkbox">Type something
+          <p class="TodoItem-Jan23"> Jan23 </p>
+          <a class="TodoItem-delete" href="javascript:void(0)">
+            <img src="trashcan.jpeg">
+          </a>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+</body>
+
+</html>
