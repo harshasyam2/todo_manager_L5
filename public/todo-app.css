@@ -1,4 +1,4 @@
-
+/*   css stylings are added to the html web page   */
   body{
         max-width:600px;
         margin-left:auto;
@@ -10,7 +10,6 @@
 
   .Todopage-title{
         font-size:20px;
-        font-weight:bolder;
         color:#453C52;
         letter-spacing: 0.14px;
         margin-bottom:12px;
@@ -102,11 +101,13 @@
         padding:5px;
   }
 
-  .TodoItem-Overdue{
+  .TodoItem-tag{
         font-size: 12px;
-        color: #C53030;
         letter-spacing: 0.09px;
         margin-left:10px;
+  }
+  .TodoItem-tag.Overdue{
+        color: #C53030;
   }
 
   .TodoItem-checkbox{
@@ -136,22 +137,4 @@
 
   .TodoItem-container:hover .TodoItem-delete{
         visibility:visible;
-  }
-
-  .TodoItem-Jan21{
-        font-size:12px;
-        margin-left:20px;
-        font-weight:lighter;
-  }
-
-  .TodoItem-Jan22{
-        font-size:12px;
-        margin-left:20px;
-        font-weight:lighter;
-  }
-
-  .TodoItem-Jan23{
-        font-size:12px;
-        margin-left:20px;
-        font-weight:lighter;
   }

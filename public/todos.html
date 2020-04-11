@@ -11,7 +11,10 @@
 </head>
 
 <body>
-  <h1 class="Todopage-title"> My Todo-list </h1>
+  <!-- The bold is a semantic tag which makes the text to look thicker -->
+  <h1 class="Todopage-title">
+    <bold>My Todo-list </bold>
+  </h1>
 
   <section class="AddTodo">
     <input class="AddTodo-text" type="text" placeholder="What's next?">
@@ -26,11 +29,13 @@
       <p class="TodoSectionTitle-text"> Due Today </p>
       <p class="TodoSectionTitle-remainingcount"> 0/4 </p>
     </div>
+
+    <!-- ul is a semantic tag which is used for listing unordered list of items-->
     <ul>
       <li class="TodoItem">
         <div class="TodoItem-container">
           <input class="TodoItem-checkbox" type="checkbox">Submit SaaS 201 Project
-          <p class="TodoItem-Overdue"> Overdue </p>
+          <p class="TodoItem-tag Overdue"> Overdue </p>
           <a class="TodoItem-delete" href="javascript:void(0)">
             <img src="trashcan.jpeg">
           </a>
@@ -53,6 +58,7 @@
       <p class="TodoSectionTitle-text"> Due Tomorrow </p>
       <p class="TodoSectionTitle-remainingcount"> 0/3 </p>
     </div>
+
     <ul>
       <li class="TodoItem">
         <div class="TodoItem-container">
@@ -70,11 +76,12 @@
       <p class="TodoSectionTitle-text"> Remaining </p>
       <p class="TodoSectionTitle-remainingcount"> 0/3 </p>
     </div>
+
     <ul>
       <li class="TodoItem">
         <div class="TodoItem-container">
           <input class="TodoItem-checkbox" type="checkbox">Type something
-          <p class="TodoItem-Jan21"> Jan21 </p>
+          <p class="TodoItem-tag"> Jan21 </p>
           <a class="TodoItem-delete" href="javascript:void(0)">
             <img src="trashcan.jpeg">
           </a>
@@ -84,7 +91,7 @@
       <li class="TodoItem">
         <div class="TodoItem-container">
           <input class="TodoItem-checkbox" type="checkbox">Type Something
-          <p class="TodoItem-Jan22"> Jan22 </p>
+          <p class="TodoItem-tag"> Jan22 </p>
           <a class="TodoItem-delete" href="javascript:void(0)">
             <img src="trashcan.jpeg">
           </a>
@@ -94,7 +101,7 @@
       <li class="TodoItem">
         <div class="TodoItem-container">
           <input class="TodoItem-checkbox" type="checkbox">Type Something
-          <p class="TodoItem-Jan23"> Jan23 </p>
+          <p class="TodoItem-tag"> Jan23 </p>
           <a class="TodoItem-delete" href="javascript:void(0)">
             <img src="trashcan.jpeg">
           </a>
