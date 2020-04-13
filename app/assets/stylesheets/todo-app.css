@@ -42,8 +42,6 @@
 
   .AddTodo-date{
         font-size: 14px;
-        max-width:113px;
-        max-height:32px;
         background: #FFFFFF;
         border: 1px solid #BFB8CC;
         border-radius: 4px;
@@ -112,8 +110,6 @@
   }
 
   .TodoItem-checkbox{
-        width:16px;
-        height:16px;
         font-size:16px;
         background: #FFFFFF;
         border: 1px solid #BFB8CC;
@@ -123,8 +119,8 @@
   }
 
   .TodoItem-delete>img{
-        max-width:16px;
-        max-height:16px;
+        width:16px;
+        height:16px;
   }
 
   .TodoItem-delete{
