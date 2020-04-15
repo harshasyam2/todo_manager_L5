@@ -1,137 +1,145 @@
 /*   css stylings are added to the html web page   */
-  .Todopage-main{
-        max-width:600px;
-        margin-left:auto;
-        margin-right:auto;
-        margin-top:30px;
-        margin-bottom:0;
-        font-family:sans-serif;
-  }
+.Todopage-main{
+      max-width:600px;
+      margin-left:auto;
+      margin-right:auto;
+      margin-top:30px;
+      margin-bottom:0;
+      font-family:sans-serif;
+    }
 
-  .Todopage-title{
-        font-size:20px;
-        font-weight:600;
-        color:#453C52;
-        letter-spacing: 0.14px;
-        margin-bottom:12px;
-        line-height:1.4;
-  }
+    .Todopage-title{
+      font-size:20px;
+      font-weight:600;
+      color:#453C52;
+      letter-spacing: 0.14px;
+      margin-bottom:12px;
+      line-height:1.4;
+    }
 
-  .AddTodo{
-        display:flex;
-        align-items:center;
-        margin-bottom:24px;
-        line-height:1.4;
-  }
+    .AddTodo{
+      display:flex;
+      align-items:center;
+      margin-bottom:24px;
+      line-height:1.4;
+    }
 
-  .AddTodo-text{
-        font-size: 14px;
-        color: #726A7E;
-        letter-spacing: 0.1px;
-        max-width: 190px;
-        max-height:32px;
-        padding-top:6px;
-        padding-bottom:7px;
-        padding-left:20px;
-        padding-right:95px;
-        margin-right:10px;
-        background: #FFFFFF;
-        border: 1px solid #BFB8CC;
-        border-radius:4px;
-  }
+    .AddTodo-text{
+      font-size: 14px;
+      color: #726A7E;
+      letter-spacing: 0.1px;
+      max-width: 190px;
+      max-height:32px;
+      padding-top:6px;
+      padding-bottom:7px;
+      padding-left:20px;
+      padding-right:95px;
+      margin-right:10px;
+      background: #FFFFFF;
+      border: 1px solid #BFB8CC;
+      border-radius:4px;
+    }
 
-  .AddTodo-date{
-        font-size: 14px;
-        background: #FFFFFF;
-        border: 1px solid #BFB8CC;
-        border-radius: 4px;
-        margin-right:11px;
-        padding:3px;
-        padding-left:5px;
-        padding-right:5px;
-        padding-top:6px;
-        padding-bottom:7px;
-  }
+    .AddTodo-date{
+      font-size: 14px;
+      background: #FFFFFF;
+      border: 1px solid #BFB8CC;
+      border-radius: 4px;
+      margin-right:11px;
+      padding:3px;
+      padding-left:5px;
+      padding-right:5px;
+      padding-top:6px;
+      padding-bottom:7px;
+    }
 
-  .AddTodo-button{
-        font-size:14px;
-        background-color:#48BB78;
-        color:white;
-        padding:7px 22px;
-        border:1px solid transparent;
-        border-radius:4px;
-  }
+    .AddTodo-button{
+      font-size:14px;
+      background-color:#48BB78;
+      color:white;
+      padding:7px 22px;
+      border:1px solid transparent;
+      border-radius:4px;
+    }
 
-  .TodoSection{
-        margin-top:24px;
-        margin-bottom:24px;
-  }
+    .TodoSection{
+      margin-top:24px;
+      margin-bottom:24px;
+    }
 
-  .TodoSectionTitle{
-        display:flex;
-        align-items:center;
-        margin-bottom:11px
-  }
+    .TodoSectionTitle{
+      display:flex;
+      align-items:center;
+      margin-bottom:11px
+    }
 
-  .TodoSectionTitle-text{
-        font-size: 14px;
-        color: #453C52;
-        height:19px;
-        letter-spacing: 0.1px;
-        font-weight:600;
-        margin-right:8px;
-  }
+    .TodoSectionTitle-text{
+      font-size: 14px;
+      color: #453C52;
+      height:19px;
+      letter-spacing: 0.1px;
+      font-weight:600;
+      margin-right:8px;
+    }
 
-  .TodoSectionTitle-remainingcount{
-        font-size: 12px;
-        color: #453C52;
-        letter-spacing: 0.09px;
-        max-width:19px;
-        max-height:17px;
-  }
+    .TodoSectionTitle-remainingcount{
+      font-size: 12px;
+      color: #453C52;
+      letter-spacing: 0.09px;
+      max-width:19px;
+      max-height:17px;
+    }
 
-  .TodoItem-container{
-        max-width:350px;
-        display:flex;
-        font-size:14px;
-        align-items:center;
-        margin-left:19px;
-        margin-bottom:10px;
-        padding:5px;
-  }
+    .TodoItem-container{
+      max-width:350px;
+      display:flex;
+      font-size:14px;
+      align-items:center;
+      margin-left:19px;
+      margin-bottom:10px;
+      padding:5px;
+    }
 
-  .TodoItem-tag{
-        font-size: 12px;
-        letter-spacing: 0.09px;
-        margin-left:10px;
-  }
-  .TodoItem-tag.Overdue{
-        color: #C53030;
-  }
+    .Todo-section-date{
+      margin-left:10px;
+      padding-bottom:4px;
+    }
+    .TodoItem-tag{
+      font-size: 12px;
+      letter-spacing: 0.09px;
+      margin-left:10px;
+    }
+    .TodoItem-tag.Overdue{
+      color: #C53030;
+    }
 
-  .TodoItem-checkbox{
-        font-size:16px;
-        background: #FFFFFF;
-        border: 1px solid #BFB8CC;
-        border-radius: 4px;
-        margin:5px;
-        padding:5px;
-  }
+    .TodoItem-checkbox{
+      font-size:16px;
+      background: #FFFFFF;
+      border: 1px solid #BFB8CC;
+      border-radius: 4px;
+      margin:5px;
+      padding:5px;
+    }
 
-  .TodoItem-delete>img{
-        width:16px;
-        height:16px;
-  }
+    .Todo-section-text{
+      text-decoration: line-through;
+    }
 
-  .TodoItem-delete{
-        visibility: hidden;
-        padding-left:20px;
-  }
+    .TodoItem-delete>img{
+      width:16px;
+      height:16px;
+    }
 
-  .TodoItem-container:hover{
-        background-color:silver;
-  }
+    .TodoItem-delete{
+      visibility: hidden;
+      padding-left:20px;
+    }
 
-  .TodoItem-container:hover .TodoItem-delete{
-        visibility:visible;
-  }
+    .TodoItem-container:hover{
+      background-color:silver;
+    }
+
+    .TodoItem-container:hover .TodoItem-delete{
+      visibility:visible;
+    }

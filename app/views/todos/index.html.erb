@@ -9,89 +9,23 @@
       <input class="AddTodo-button" type="button" value="Add">
     </section>
 
-    <section class="TodoSection">
-      <div class="TodoSectionTitle">
-        <p class="TodoSectionTitle-text"> Due Today </p>
-        <p class="TodoSectionTitle-remainingcount"> 0/2 </p>
-      </div>
+    <%= render partial: "todo-section",
+    locals: {
+      todo_title: "Overdue",
+      todos: Todo.overdue.notcompleted,
+      show_due_date: true
+      }  %>
+    <%= render partial: "todo-section",
+     locals: {
+       todo_title: "Due Today",
+       todos: Todo.due_today,
+       show_due_date: false
+       }  %>
+    <%= render partial: "todo-section",
+    locals: {
+      todo_title: "Due Later",
+      todos: Todo.due_later,
+      show_due_date: true
+      }  %>
 
-      <!-- ul is a semantic tag which is used for listing unordered list of items-->
-      <ul>
-        <li class="TodoItem">
-          <div class="TodoItem-container">
-            <input class="TodoItem-checkbox" type="checkbox">Submit SaaS 201 Project
-            <p class="TodoItem-tag Overdue"> Overdue </p>
-            <a class="TodoItem-delete" href="javascript:void(0)">
-              <img src="trashcan.jpeg">
-            </a>
-          </div>
-        </li>
-
-        <li class="TodoItem">
-          <div class="TodoItem-container">
-            <input class="TodoItem-checkbox" type="checkbox">Call accountant
-            <a class="TodoItem-delete" href="javascript:void(0)">
-              <img src="trashcan.jpeg">
-            </a>
-          </div>
-        </li>
-      </ul>
-    </section>
-
-    <section class="TodoSection">
-      <div class="TodoSectionTitle">
-        <p class="TodoSectionTitle-text"> Due Tomorrow </p>
-        <p class="TodoSectionTitle-remainingcount"> 0/1 </p>
-      </div>
-
-      <ul>
-        <li class="TodoItem">
-          <div class="TodoItem-container">
-            <input class="TodoItem-checkbox" type="checkbox">Refill groceries</label>
-            <a class="TodoItem-delete" href="javascript:void(0)">
-              <img src="trashcan.jpeg">
-            </a>
-          </div>
-        </li>
-      </ul>
-    </section>
-
-    <section class="TodoSection">
-      <div class="TodoSectionTitle">
-        <p class="TodoSectionTitle-text"> Remaining </p>
-        <p class="TodoSectionTitle-remainingcount"> 0/3 </p>
-      </div>
-
-      <ul>
-        <li class="TodoItem">
-          <div class="TodoItem-container">
-            <input class="TodoItem-checkbox" type="checkbox">Visit Hometown
-            <p class="TodoItem-tag"> Apr21 </p>
-            <a class="TodoItem-delete" href="javascript:void(0)">
-              <img src="trashcan.jpeg">
-            </a>
-          </div>
-        </li>
-
-        <li class="TodoItem">
-          <div class="TodoItem-container">
-            <input class="TodoItem-checkbox" type="checkbox">Sell goods
-            <p class="TodoItem-tag"> Apr22 </p>
-            <a class="TodoItem-delete" href="javascript:void(0)">
-              <img src="trashcan.jpeg">
-            </a>
-          </div>
-        </li>
-
-        <li class="TodoItem">
-          <div class="TodoItem-container">
-            <input class="TodoItem-checkbox" type="checkbox">Plan a Party
-            <p class="TodoItem-tag"> Apr23 </p>
-            <a class="TodoItem-delete" href="javascript:void(0)">
-              <img src="trashcan.jpeg">
-            </a>
-          </div>
-        </li>
-      </ul>
-    </section>
-  </main>
+ </main>
