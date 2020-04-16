@@ -8,16 +8,11 @@
     <% todos.order(:due_date).each do |todo| %>
     <li class="TodoItem">
       <div class="TodoItem-container">
-        <% if todo.completed == true %>
-          <input class="TodoItem-checkbox" type="checkbox" checked="checked">
-          <p class="Todo-section-text"> <%= todo.todo_text %> </p>
-        <% else %>
-          <input class="TodoItem-checkbox" type="checkbox">
-          <%= todo.todo_text %>
-        <% end %>
+          <input class="TodoItem-checkbox" type="checkbox" <%=todo.completed ? "checked" : ""%> >
+          <p class="<%= todo.completed ? "Todo-section-text" : ""%>"> <%= todo.todo_text %> </p>
         <% if show_due_date %>
          <p class="Todo-section-date"> <%= todo.due_date.to_s(:short) %>
-         <% end %>
+        <% end %>
           <a class="TodoItem-delete" href="javascript:void(0)">
             <img src="trashcan.svg">
           </a>

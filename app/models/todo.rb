@@ -24,6 +24,6 @@ class Todo < ActiveRecord::Base
   end
 
   def to_pleasant_string
-    "#{id} #{completed}"
+    "#{id} #{todo_text} #{due_date} #{completed}"
   end
 end
