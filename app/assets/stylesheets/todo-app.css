@@ -124,11 +124,6 @@
       text-decoration: line-through;
     }
 
-    .TodoItem-delete>img{
-      width:16px;
-      height:16px;
-    }
-
     .TodoItem-delete{
       visibility: hidden;
       padding-left:20px;
@@ -140,4 +135,8 @@
 
     .TodoItem-container:hover .TodoItem-delete{
       visibility:visible;
+    }
+
+    .delete-image{
+      width:16px;
     }
