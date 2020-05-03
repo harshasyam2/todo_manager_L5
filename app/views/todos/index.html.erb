@@ -2,27 +2,49 @@
     <h1 class="Todopage-title"> My Todo-list</h1>
 
     <%= form_with(url: "/todos",method: "POST",class: "AddTodo") do %>
-      <%= text_field_tag(name="todo_text",value=nil,class: "AddTodo-text",placeholder: "What's next?") %>
 
-      <%= date_field_tag(name="due_date",value=nil,class: "AddTodo-date") %>
+      <%= text_field_tag(
+        name="todo_text",
+        value=nil,
+        class: "AddTodo-text",
+        placeholder: "What's next?"
+        )
+      %>
 
-      <%= button_tag(value="Add",class: "AddTodo-button") %>
+      <%= date_field_tag(
+        name="due_date",
+        value=nil,
+        class: "AddTodo-date"
+        )
+      %>
+
+      <%= button_tag(
+        value="Add",
+        class: "AddTodo-button"
+        )
+      %>
+
     <% end %>
 
     <%= render partial: "todo-section", locals: {
       todo_title: "Overdue",
       todos: Todo.overdue,
       show_due_date: true
-      }  %>
+      }
+    %>
+
     <%= render partial: "todo-section", locals: {
        todo_title: "Due Today",
        todos: Todo.due_today,
        show_due_date: false
-       }  %>
+       }
+    %>
+
     <%= render partial: "todo-section", locals: {
       todo_title: "Due Later",
       todos: Todo.due_later,
       show_due_date: true
-      }  %>
+      }
+    %>
 
  </main>

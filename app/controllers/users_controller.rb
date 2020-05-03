@@ -9,7 +9,11 @@ class UsersController < ApplicationController
     name = params[:name]
     email = params[:email]
     password = params[:password]
-    new_user = User.create!(name: name, email: email, password: password)
+    new_user = User.create!(
+      name: name,
+      email: email,
+      password: password,
+    )
     render plain: new_user.to_display
   end
 
