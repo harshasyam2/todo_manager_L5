@@ -5,16 +5,19 @@ class UsersController < ApplicationController
     render plain: User.all.map { |user| user.to_display }.join("\n")
   end
 
+  def new
+    render "users/new"
+  end
+
   def create
-    name = params[:name]
-    email = params[:email]
-    password = params[:password]
     new_user = User.create!(
-      name: name,
-      email: email,
-      password: password,
+      first_name: params[:first_name],
+      last_name: params[:last_name],
+      email: params[:email],
+      password: params[:password],
     )
-    render plain: new_user.to_display
+    session[:current_user_id] = new_user.id
+    redirect_to "/"
   end
 
   def login

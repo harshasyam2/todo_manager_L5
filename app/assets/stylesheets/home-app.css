@@ -1,0 +1,37 @@
+.Home_page_menu{
+  width:100%;
+  height: auto;
+  margin:20px;
+  margin-left: 20px;
+}
+
+.heading{
+  font-size:18px;
+  text-align: center;
+  font-weight:600px;
+  margin-top:15px;
+  text-shadow: 10px 10px 10px red;
+}
+
+.Home_menu{
+  font-size:14px;
+  padding:8px;
+  cursor: pointer;
+  margin-top:40px;
+}
+
+.create{
+  text-align:center;
+  margin:10px;
+  padding:5px;
+}
+
+.signin{
+  text-align:center;
+  margin:10px;
+  padding:5px;
+}
+
+.heading:hover{
+  text-shadow: 10px 10px 10px #453C52;
+}
