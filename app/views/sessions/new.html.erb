@@ -1,13 +1,13 @@
 <div class="Customer_signin">
-  <h1 class="NewCustomers_title">Sign in!</h1>
+  <h1 class="NewCustomers_title"> Sign in!</h1>
   <section class="Signin_content">
     <%= form_with url:sessions_path do |form| %>
       <div class="Form-section">
-        <p class="Form-input-label">Email:</p>
+        <p class="Form-input-label"> Email:</p>
         <%= form.email_field :email,class:"Form-input",placeholder: "Email-id" %>
       </div>
       <div class="Form-section">
-        <p class="Form-input-label">Password:</p>
+        <p class="Form-input-label"> Password:</p>
         <%= form.password_field :password,class:"Form-input",placeholder: "Password" %>
       </div>
       <div class="Form-section">
