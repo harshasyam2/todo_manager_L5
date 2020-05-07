@@ -1,7 +1,7 @@
 /*   css stylings are added to the html web page   */
-.Todopage-main{
+    .Todopage-main{
       max-width:600px;
-      margin-left:auto;
+      margin-left:230px;
       margin-right:auto;
       margin-top:30px;
       margin-bottom:0;
@@ -55,7 +55,7 @@
 
     .AddTodo-button{
       font-size:14px;
-      background-color:#48BB78;
+      background-color:limegreen;
       color:white;
       padding:7px 22px;
       border:1px solid transparent;
@@ -139,4 +139,33 @@
 
     .delete-image{
       width:16px;
+    }
+
+    .signout_heading{
+      font-size:14px;
+      transition: 0.5s;
+    }
+
+    .signout_heading:hover{
+      transform: scale(1.1);
+    }
+
+    .links{
+      margin:5px;
+      text-decoration:none;
+    }
+
+    .links:hover{
+      text-decoration:underline;
+    }
+
+    .Customer_heading{
+      max-width: 700px;
+      margin:0 auto;
+      margin-top:30px;
+      padding:10px;
+      background-color:lightgray;
+      display:flex;
+      align-items:center;
+      justify-content: space-between;
     }
