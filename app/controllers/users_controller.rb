@@ -30,6 +30,6 @@ class UsersController < ApplicationController
   def login
     email = params[:email]
     password = params[:password]
-    render plain: User.where("email=? and password=?", email, password).exists? ? "Login Successfull....True" : "Login Failed...False"
+    render plain: User.where("email=? and password=?", email, password).exists?
   end
 end
